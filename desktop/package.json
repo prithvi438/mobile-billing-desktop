@@ -1,0 +1,35 @@
+{
+  "name": "mobile-billing",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.yourcompany.mobilebilling",
+    "productName": "Mobile Billing",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "**/*",
+      "../frontend/dist/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  },
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.1",
+    "electron": "^40.1.0",
+    "electron-builder": "^26.4.0"
+  },
+  "dependencies": {
+    "escpos": "^3.0.0-alpha.6",
+    "react-router-dom": "^7.13.0"
+  }
+}

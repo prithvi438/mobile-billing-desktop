@@ -1,0 +1,30 @@
+# --- Dependencies ---
+**/node_modules/
+node_modules/
+package-lock.json
+frontend/package-lock.json
+desktop/package-lock.json
+
+# --- React/Frontend Artifacts ---
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# --- Electron/Desktop Artifacts ---
+desktop/dist/
+desktop/release/
+desktop/out/
+*.dmg
+*.exe
+*.blockmap
+builder-debug.yml
+builder-effective-config.yaml
+
+# --- System/OS Clutter ---
+.DS_Store
+Thumbs.db
+*.log
+
+# --- Environment Secrets ---
+.env
+.env.local
